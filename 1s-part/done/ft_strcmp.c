@@ -6,7 +6,7 @@
 /*   By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 22:23:16 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/09/06 22:23:16 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/09/09 19:28:36 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_strcmp(char *st1, char *st2)
 	i = 0;
 	while (st1[i] && st2[i] && st1[i] == st2[i])
 		i++;
-	return ((unsigned char)st1[i] - (unsigned char)st2);
+	return ((unsigned char)st1[i] - (unsigned char)st2[i]);
 }
