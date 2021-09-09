@@ -6,7 +6,7 @@
 /*   By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 15:38:14 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/09/08 15:38:14 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/09/09 19:17:23 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcat(char *to, char *from)
 	i = 0;
 	while (to[i])
 		i++;
-	while (*from && to[i])
+	while (*from)
 	{
 		to[i] = *from;
 		from++;
