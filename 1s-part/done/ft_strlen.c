@@ -6,14 +6,16 @@
 /*   By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 15:06:36 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/09/08 15:06:36 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/09/10 12:57:44 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_strlen(char *str)
 {
-    int len;
-    while (str[len])
-        len++;
-    return (len);
+    int cara;
+
+    cara = 0;
+    while (str[cara])
+        cara++;
+    return (cara);
 }
