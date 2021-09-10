@@ -6,11 +6,13 @@
 /*   By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 15:30:27 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/09/08 15:30:27 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/09/10 12:53:03 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	toupper(int	cara)
+int	ft_toupper(int	cara)
 {
-	return (cara - 32);
+	if (cara >= 97 && cara <= 122)
+		return (cara - 32);
+	return (cara);
 }
