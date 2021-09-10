@@ -6,19 +6,20 @@
 /*   By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 15:10:05 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/09/08 15:10:05 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/09/09 20:54:20 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_strcpy(char *str1, char *str2)
+char	*ft_strcpy(char *str1, char *str2)
 {
 	int	i;
 
 	i = 0;
-	while (str1[i] && str2[i])
+	while (str2[i])
 	{
 		str1[i] = str2[i];
 		i++;
 	}
+	str1[i] = '\0';
 	return (str1);
 }
