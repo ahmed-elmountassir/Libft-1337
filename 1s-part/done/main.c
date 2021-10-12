@@ -14,20 +14,18 @@
 #include "ft_strchr.c"
 #include "ft_strrchr.c"
 #include "ft_strdup.c"
-
+#include "ft_strncat.c"
 int main()
 {
-	/*
-	char te1[] = "ahmed67";
-	char te2[] = "ahmed15hh";
-	printf("%d\n", strncmp(te1, te2, 8));
-	char t1[] = "ahmed67";
-	char t2[] = "ahmed15hh";
-	printf("%d\n", ft_strncmp(t1, t2, 8));
+	
+	char te1[5] = "";
+	char te2[] = " el mounta\0ssir";
+	printf("%s\n", ft_strncat(te1, te2, 18));
+
 
 //	printf("%d", ft_strlen("ahmed el mountassir"));
-*/
-	char h[] = "ahmed el mountassir 36";
-	printf("%s", ft_strrchr(h, 32));
+
+	//char h[] = "ahmed el mountassir 36";
+	//printf("%s", ft_strrchr(h, 32));
 	return (0);
 }
