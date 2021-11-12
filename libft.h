@@ -6,7 +6,7 @@
 /*   By: ahel-mou <ahel-mou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/11/09 18:19:09 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/11/12 13:04:43 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,9 @@
 
 typedef struct s_list
 {
-	void *content;
-	struct s_list *next;
-} t_list;
-
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);
@@ -57,15 +56,15 @@ void		ft_putnbr_fd(int nb, int file_d);
 void		ft_putendl_fd(char *str, int file_d);
 char		*ft_itoa(int n);
 char		*ft_strrev(char *add_func);
-char        *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void        ft_striteri(char *s, void (*f)(unsigned int, char*));
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 t_list		*ft_lstnew(void *ele_content);
 t_list		*ft_lstlast(t_list *lst);
-void		*ft_lstadd_front(t_list **lst, t_list *new);
-void		*ft_lstadd_back(t_list **lst, t_list *new);
+void		ft_lstadd_front(t_list **lst, t_list *new);
+void		ft_lstadd_back(t_list **lst, t_list *new);
 int			ft_lstsize(t_list *lst);
 void		ft_lstdelone(t_list *lst, void (*del)(void *));
 void		ft_lstclear(t_list **lst, void (*del)(void *));
-
+void		ft_lstiter(t_list *lst, void (*f)(void *));
 
 #endif
