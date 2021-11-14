@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ahel-mou <ahel-mou@student.1337.ma>        +#+  +:+       +#+         #
+#    By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:18:36 by ahel-mou          #+#    #+#              #
-#    Updated: 2021/11/11 15:02:09 by ahel-mou         ###   ########.fr        #
+#    Updated: 2021/11/14 07:43:03 by ahel-mou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,10 +34,6 @@ OBJS = $(SRCS:.c=.o)
 B_OBJS = $(B_SRC:.c=.o)
 
 all: $(NAME)
-
-test: all
-	cc Test.c libft.a
-	clear & ./a.out
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
