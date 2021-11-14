@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahel-mou <ahel-mou@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/11/12 13:04:43 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/11/14 07:35:24 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
