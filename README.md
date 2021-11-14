@@ -1,7 +1,7 @@
 # Libft-1337
 Libft is my first school project, it's basically an expandable C-library with highly useful standard functions that i re-write, and im allowed to use this library which will help me with all my future C projects.
 
-<img src="https://i.imgur.com/YA9GJZE.png" width="700" height="100">
+<img src="https://i.imgur.com/YA9GJZE.png" width="700" height="350">
 
 ### First Part Functions
 - |-ft_isalpha
