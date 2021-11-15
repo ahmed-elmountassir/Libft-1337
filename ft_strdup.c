@@ -6,7 +6,7 @@
 /*   By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:30:01 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/11/13 22:46:40 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2021/11/15 18:50:39 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strdup(const char *s)
 	size_t		i;
 	char		*str;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	str = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!str)
