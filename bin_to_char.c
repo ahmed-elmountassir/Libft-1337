@@ -17,4 +17,3 @@ int     binary_to_char(char *bin)
         }
         return (dec * ng);
 }
-
