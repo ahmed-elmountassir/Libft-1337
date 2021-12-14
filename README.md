@@ -51,4 +51,5 @@ Libft is my first school project, it's basically an expandable C-library with hi
 - |-ft_lstmap ---> not done YET
 ### additional Functions <..expansion..>
 - |-ft_strrev
-- |-ascii_to_bin
+- |-char_to_bin
+- |-bin_to_char
