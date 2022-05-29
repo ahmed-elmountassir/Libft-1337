@@ -25,7 +25,6 @@ Libft is my first school project, it's basically an expandable C-library with hi
 - |-ft_atoi
 - |-ft_calloc
 - |-ft_strdup
-### Second Part Functions
 - |-ft_substr
 - |-ft_strjoin
 - |-ft_strtrim
@@ -37,7 +36,6 @@ Libft is my first school project, it's basically an expandable C-library with hi
 - |-ft_putstr_fd
 - |-ft_putendl_fd
 - |-ft_putnbr_fd
-### Bonus Functions
 - |-ft_lstnew
 - |-ft_lstsize
 - |-ft_lstlast
