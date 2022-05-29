@@ -6,7 +6,7 @@
 /*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2022/05/29 14:22:40 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:26:39 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,4 +81,5 @@ char   		**pop_index(char **arr, int index); // remove the string at index from 
 void		sort_ints_tab(int *tab); // sort an array of integers
 void		sort_strings_arr(char **tab); // sort an array of strings
 void    	ft_error(char *str, char *arg); // print an error message and exit
+int			*reverse_ints_tab(int *arr); // return an array of integers which is the reverse of arr
 #endif
