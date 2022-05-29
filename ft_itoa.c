@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahel-mou <ahel-mou@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:09:03 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/11/08 18:20:09 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:23:04 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,5 @@ char	*ft_itoa(int n)
 	}
 	if (neg)
 		arr[i] = '-';
-	return (ft_strrev(arr));
+	return (reverse_string(arr));
 }

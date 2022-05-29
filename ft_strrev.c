@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahel-mou <ahel-mou@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 17:42:08 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/11/09 14:31:37 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:26:35 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrev(char *str)
+char	*reverse_string(char *str)
 {
 	size_t	i;
 	size_t	len;
@@ -31,4 +31,21 @@ char	*ft_strrev(char *str)
 		i++;
 	}
 	return (str);
+}
+
+int		*reverse_ints_tab(int *arr)
+{
+	int		i;
+	int		swp;
+	int		len = sizeof(arr) / sizeof(int);
+	i = 0;
+	while (i < len / 2)
+	{
+		swp = arr[i];
+		arr[i] = arr[len - 1];
+		arr[len - 1] = swp;
+		len--;
+		i++;
+	}
+	return (arr);
 }
