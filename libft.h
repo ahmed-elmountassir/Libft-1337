@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
+/*   By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2022/05/29 13:34:32 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2022/05/29 13:54:36 by ahouari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char		*ft_strchr(const char *str, int c); // return a pointer to the first occur
 size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize); 	// copy src to dst, return the number of bytes copied
 size_t		ft_strlcat(char *dst, const char *src, size_t dstsize); 	// append src to dst, return the number of bytes copied
 size_t		ft_strlen(const char *str); // return the length of str
+int 		ft_strcmp(const char *s1  , const char *s2); // return 0 if s1 and s2 are identical, return a negative number if s1 is before s2, return a positive number if s1 is after s2
 int			ft_strncmp(const char *s1, const char *s2, size_t n); // return the difference between the first n characters of s1 and s2
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len); // return a pointer to the first occurrence of needle in haystack
 void		*ft_memset(void *s, int c, size_t n); // set the first n bytes of s to the value c
@@ -71,12 +72,12 @@ void		ft_lstiter(t_list *lst, void (*f)(void *)); // apply f to each element of 
 char		*char_to_bin(char cara) ;// return a string which is the binary representation of ascii
 int			bin_to_char(char *bits); // return the ASCII value of the string bits
 size_t 		char_index(char *str , char c); // find the index of a char in a string
-void    	free_td_arr(char **arr);
-void    	print_td_arr(char **arr);
-size_t  	td_arr_size(char **arr);
-void   		ft_free(char *str);
-char   		**append_to_arr(char **arr, char *append);
-char   		**pop_index(char **arr, int index);
-void		sort_ints_tab(int *tab);
-
+void    	free_td_arr(char **arr); // free an array of strings
+void    	print_td_arr(char **arr); // print an array of strings
+size_t  	td_arr_size(char **arr); // return the number of strings in an array of strings
+void   		ft_free(char *str); // free a string
+char   		**append_to_arr(char **arr, char *append); // append a string to an array of strings
+char   		**pop_index(char **arr, int index); // remove the string at index from an array of strings
+void		sort_ints_tab(int *tab); // sort an array of integers
+void		sort_strings_arr(char **tab); // sort an array of strings
 #endif

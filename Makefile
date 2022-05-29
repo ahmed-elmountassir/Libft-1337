@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+         #
+#    By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:18:36 by ahel-mou          #+#    #+#              #
-#    Updated: 2022/05/29 13:01:22 by ahel-mou         ###   ########.fr        #
+#    Updated: 2022/05/29 13:57:33 by ahouari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ CC = cc
 
 FLAGS = -Wall -Werror -Wextra
 
-OBJS = $(SRCS:.c=.o) $(EXTENDED:.c:.o)
+OBJS = $(SRCS:.c=.o) $(EXTENDED:.c=.o)
 
 all: $(NAME)
 
