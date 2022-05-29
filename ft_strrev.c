@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahel-mou <ahel-mou@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 17:42:08 by ahel-mou          #+#    #+#             */
-/*   Updated: 2021/11/09 14:31:37 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:23:09 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrev(char *str)
+char	*reverse_string(char *str)
 {
 	size_t	i;
 	size_t	len;

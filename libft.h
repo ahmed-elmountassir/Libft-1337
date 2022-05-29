@@ -6,7 +6,7 @@
 /*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2022/05/29 14:20:37 by ahel-mou         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:22:40 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void		ft_putstr_fd(char *str, int file_d); // write the string str to the file d
 void		ft_putnbr_fd(int nb, int file_d); // write the number nb to the file descriptor file_d
 void		ft_putendl_fd(char *str, int file_d); // write the string str to the file descriptor file_d and add a new line
 char		*ft_itoa(int n); 	// return a string representation of n
-char		*ft_strrev(char *add_func); // return a string which is the reverse of add_func
+char		*reverse_string(char *add_func); // return a string which is the reverse of add_func
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char)); // return a new string which is the result of applying f to each character of s
 void		ft_striteri(char *s, void (*f)(unsigned int, char*)); // apply f to each character of s
 t_list		*ft_lstnew(void *ele_content); // return a new t_list element

@@ -45,7 +45,7 @@ Libft is my first school project, it's basically a C-library with highly useful 
 - |-ft_lstiter
 - |-ft_lstmap ---> not done YET
 ### additional Functions <..expansion..>
-- |-char        *ft_strrev(char *str);
+- |-char        *reverse_string(char *str);
 - |-char        *char_to_bin(char c);
 - |-char        bin_to_char(char *bin);
 - |-size_t      char_index(char *str, char c);
