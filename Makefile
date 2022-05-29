@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ahel-mou <ahel-mou@student-1337.ma>        +#+  +:+       +#+         #
+#    By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:18:36 by ahel-mou          #+#    #+#              #
-#    Updated: 2021/11/14 07:43:03 by ahel-mou         ###   ########.fr        #
+#    Updated: 2022/05/29 11:12:40 by ahouari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c\
 	  ft_strjoin.c ft_calloc.c ft_strtrim.c ft_split.c\
 	  ft_putchar_fd.c ft_putnbr_fd.c ft_putendl_fd.c\
 	  ft_putstr_fd.c ft_itoa.c ft_strrev.c ft_strmapi.c ft_striteri.c\
-	  char_to_bin.c bin_to_char.c
+	  char_to_bin.c bin_to_char.c char_index.c
 
 B_SRC =	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c\
 		ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
@@ -37,7 +37,7 @@ B_OBJS = $(B_SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 bonus : $(OBJS) $(B_OBJS)
 	ar rcs $(NAME) $(OBJS) $(B_OBJS)
@@ -48,13 +48,13 @@ main: all bonus
 	./a.out
 
 %.o: %.c
-	$(CC) $(FLAG) -c $<
+	@$(CC) $(FLAG) -c $<
 
 clean:
-	find . -name "*.o" -delete
+	@find . -name "*.o" -delete
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
