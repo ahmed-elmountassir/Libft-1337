@@ -1,6 +1,5 @@
-# Libft-1337
-Libft is my first school project, it's basically an expandable C-library with highly useful standard functions that i re-write, and im allowed to use this library in all my future C projects, the more i exanpd it the easier the project gets.
-
+# Libft
+Libft is my first school project, it's basically a C-library with highly useful functions, feel free to contribute and add ur own functions.
 ### First Part Functions
 - |-ft_isalpha
 - |-ft_isdigit
