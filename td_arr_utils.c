@@ -52,14 +52,3 @@ char    **pop_index(char **arr, int index)
     print_td_arr(tmp);
     return (tmp);
 }
-int main()
-{
-    char **arr;
-    arr = malloc (sizeof(char *) * 5);
-    arr[0] = "test";
-    arr[1] = "ahmed";
-    arr[2] = "el mountassir";
-    arr[3] = "ahmed12312123";
-    arr[4] = NULL;
-    pop_index(arr, 2);
-}
