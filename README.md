@@ -48,7 +48,14 @@ Libft is my first school project, it's basically an expandable C-library with hi
 - |-ft_lstiter
 - |-ft_lstmap ---> not done YET
 ### additional Functions <..expansion..>
-- |-ft_strrev
-- |-char_to_bin
-- |-bin_to_char
-- |-char_index
+- |-char        *ft_strrev(char *str);
+- |-char        *char_to_bin(char c);
+- |-char        bin_to_char(char *bin);
+- |-size_t      char_index(char *str, char c);
+- |-size_t      td_arr_len(char **array);
+- |-void    	free_td_arr(char **arr);
+- |-void    	print_td_arr(char **arr);
+- |-size_t  	td_arr_size(char **arr);
+- |-void   		ft_free(char *str);
+- |-char        **pop_index(char **arr, int index);
+- |-void		sort_ints_tab(int *tab);

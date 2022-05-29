@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2022/05/29 11:08:46 by ahouari          ###   ########.fr       */
+/*   Updated: 2022/05/29 13:34:32 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,4 +71,12 @@ void		ft_lstiter(t_list *lst, void (*f)(void *)); // apply f to each element of 
 char		*char_to_bin(char cara) ;// return a string which is the binary representation of ascii
 int			bin_to_char(char *bits); // return the ASCII value of the string bits
 size_t 		char_index(char *str , char c); // find the index of a char in a string
+void    	free_td_arr(char **arr);
+void    	print_td_arr(char **arr);
+size_t  	td_arr_size(char **arr);
+void   		ft_free(char *str);
+char   		**append_to_arr(char **arr, char *append);
+char   		**pop_index(char **arr, int index);
+void		sort_ints_tab(int *tab);
+
 #endif

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+         #
+#    By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:18:36 by ahel-mou          #+#    #+#              #
-#    Updated: 2022/05/29 11:12:40 by ahouari          ###   ########.fr        #
+#    Updated: 2022/05/29 13:01:22 by ahel-mou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,32 +20,24 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c\
 	  ft_tolower.c ft_toupper.c ft_strnstr.c ft_substr.c\
 	  ft_strjoin.c ft_calloc.c ft_strtrim.c ft_split.c\
 	  ft_putchar_fd.c ft_putnbr_fd.c ft_putendl_fd.c\
-	  ft_putstr_fd.c ft_itoa.c ft_strrev.c ft_strmapi.c ft_striteri.c\
-	  char_to_bin.c bin_to_char.c char_index.c
+	  ft_putstr_fd.c ft_itoa.c ft_strmapi.c ft_striteri.c\
+	  ft_lstnew.c ft_lstadd_front.c ft_lstsize.c\
+	  ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
+      ft_lstclear.c ft_lstiter.c\
 
-B_SRC =	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c\
-		ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
-		ft_lstclear.c ft_lstiter.c
+EXTENDED = td_arr_utils.c char_to_bin.c bin_to_char.c char_index.c ft_strrev.c\
+			allocation_utils.c allocation_utils.c sorting.c\
 
 CC = cc
 
 FLAGS = -Wall -Werror -Wextra
 
-OBJS = $(SRCS:.c=.o)
-B_OBJS = $(B_SRC:.c=.o)
+OBJS = $(SRCS:.c=.o) $(EXTENDED:.c:.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
-
-bonus : $(OBJS) $(B_OBJS)
-	ar rcs $(NAME) $(OBJS) $(B_OBJS)
-
-main: all bonus
-	gcc main.c $(NAME)
-	clear
-	./a.out
 
 %.o: %.c
 	@$(CC) $(FLAG) -c $<
