@@ -3,16 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
+/*   By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/05/29 15:05:10 by ahouari          ###   ########.fr       */
-=======
-/*   Updated: 2022/05/29 14:26:39 by ahel-mou         ###   ########.fr       */
->>>>>>> db4a869956cfbe037ba39fff19270068ca675ba2
+/*   Updated: 2022/05/29 15:09:39 by ahouari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -94,7 +91,8 @@ char   		**append_to_arr(char **arr, char *append); // append a string to an arr
 char   		**pop_index(char **arr, int index); // remove the string at index from an array of strings
 void		sort_ints_tab(int *tab); // sort an array of integers
 void		sort_strings_arr(char **tab); // sort an array of strings
-<<<<<<< HEAD
+void    	ft_error(char *str, char *arg); // print an error message and exit
+int			*reverse_ints_tab(int *arr); // return an array of integers which is the reverse of arr
 
 
 // -------------- trees functions --------------
@@ -103,8 +101,4 @@ void	print_tree(t_node *node); // print the tree
 void	free_tree(t_node *node); // free the tree
 t_node *reverse(t_node *node); // reverse the leaves of the node
 
-=======
-void    	ft_error(char *str, char *arg); // print an error message and exit
-int			*reverse_ints_tab(int *arr); // return an array of integers which is the reverse of arr
->>>>>>> db4a869956cfbe037ba39fff19270068ca675ba2
 #endif
