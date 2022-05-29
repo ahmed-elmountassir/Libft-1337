@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ahel-mou <ahel-mou@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2022/05/29 13:54:36 by ahouari          ###   ########.fr       */
+/*   Updated: 2022/05/29 14:20:37 by ahel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,5 @@ char   		**append_to_arr(char **arr, char *append); // append a string to an arr
 char   		**pop_index(char **arr, int index); // remove the string at index from an array of strings
 void		sort_ints_tab(int *tab); // sort an array of integers
 void		sort_strings_arr(char **tab); // sort an array of strings
+void    	ft_error(char *str, char *arg); // print an error message and exit
 #endif

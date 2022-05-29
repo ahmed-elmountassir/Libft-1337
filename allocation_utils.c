@@ -14,3 +14,13 @@ void    ft_free(char *str)
         free(str);
     str = NULL;
 }
+
+void    ft_error(char *str, char *arg)
+{
+    write(2, str, ft_strlen(str));
+    if (arg)
+        write(2, arg, ft_strlen(arg));
+    write(2, "\n", 1);
+    kill(0, SIGINT);
+    exit(1);
+}
