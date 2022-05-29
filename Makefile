@@ -6,7 +6,7 @@
 #    By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:18:36 by ahel-mou          #+#    #+#              #
-#    Updated: 2022/05/29 13:57:33 by ahouari          ###   ########.fr        #
+#    Updated: 2022/05/29 15:05:19 by ahouari          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c\
       ft_lstclear.c ft_lstiter.c\
 
 EXTENDED = td_arr_utils.c char_to_bin.c bin_to_char.c char_index.c ft_strrev.c\
-			allocation_utils.c allocation_utils.c sorting.c\
+			allocation_utils.c allocation_utils.c sorting.c trees.c\
 
 CC = cc
 

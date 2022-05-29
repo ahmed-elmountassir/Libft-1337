@@ -6,7 +6,7 @@
 /*   By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2022/05/29 13:54:36 by ahouari          ###   ########.fr       */
+/*   Updated: 2022/05/29 15:05:10 by ahouari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,21 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+// linked list
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+
+// trees
+typedef struct s_node
+{
+    int        content;
+    struct s_node	*left;
+    struct s_node	*right;
+}				t_node;
 
 
 int			ft_isalpha(int c); // return 1 if c is a letter
@@ -80,4 +90,12 @@ char   		**append_to_arr(char **arr, char *append); // append a string to an arr
 char   		**pop_index(char **arr, int index); // remove the string at index from an array of strings
 void		sort_ints_tab(int *tab); // sort an array of integers
 void		sort_strings_arr(char **tab); // sort an array of strings
+
+
+// -------------- trees functions --------------
+t_node	*create_node(int content); // create a new node with content
+void	print_tree(t_node *node); // print the tree 
+void	free_tree(t_node *node); // free the tree
+t_node *reverse(t_node *node); // reverse the leaves of the node
+
 #endif
