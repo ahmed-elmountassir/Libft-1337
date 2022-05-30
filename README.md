@@ -59,8 +59,7 @@ Libft is my first school project, it's basically a C-library with highly useful 
 - |-void		sort_strings_arr(char **tab);
 - |-void        ft_error(char *str, char *arg);
 - |-int		    *reverse_ints_tab(int *arr);
-
-        ### trees functions
+### trees functions
 - |-t_node	    *create_node(int content);
 - |-void        inorder_print(t_node *node);
 - |-void        preorder_print(t_node *node);
