@@ -6,7 +6,7 @@
 /*   By: ahouari <ahouari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:50:00 by ahel-mou          #+#    #+#             */
-/*   Updated: 2022/05/29 15:09:39 by ahouari          ###   ########.fr       */
+/*   Updated: 2022/05/30 08:36:18 by ahouari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+#include <signal.h>
 
 // linked list
 typedef struct s_list
@@ -97,7 +98,11 @@ int			*reverse_ints_tab(int *arr); // return an array of integers which is the r
 
 // -------------- trees functions --------------
 t_node	*create_node(int content); // create a new node with content
-void	print_tree(t_node *node); // print the tree 
+t_node  *insert_node(t_node *root, int content); // insert a new node with content in the tree
+t_node  *find_node( t_node *root ,int value); // return the node with value in the tree
+void	pre_order_print(t_node *node ); // print the tree in pre-order
+void    post_order_print(t_node *node ); // print the tree in pre-order or post-order
+void    inorder_print(t_node *node ); // print the tree in order
 void	free_tree(t_node *node); // free the tree
 t_node *reverse(t_node *node); // reverse the leaves of the node
 
