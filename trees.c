@@ -13,7 +13,9 @@ t_node	*create_node(int content)
 }
 
 
-// create a tree and return it
+// creates a binaary search tree : 
+// wich means that the left child is less than the parent and the right child is greater than the parent ,
+//  if u want to read the read it , use inorder traversal
 t_node *insert_node(t_node *root, int content)
 {
     if (root == NULL)
@@ -40,31 +42,45 @@ t_node *find_node( t_node *root ,int value)
 
 
 
-// print the trees
+//-------------------- print the trees-----------------------------
+
+// preorder traversal
+
+// 1 - Traverse the root node
+// 2 - Traverse the left sub-tree
+// 3 - Traverse the right sub-tree
 void	pre_order_print(t_node *node )
 {
     if (!node)
         return ;
-    printf("%d\n", (int)node->content);
+    printf("%d |", (int)node->content);
     pre_order_print(node->left);
     pre_order_print(node->right);
 }
 
+// post order traversal
+// 1 - Traverse the left sub-tree
+// 2 - Traverse the right sub-tree
+// 3 - Traverse the root node
 void    post_order_print(t_node *node )
 {
     if (!node)
         return ;
     post_order_print(node->left);
     post_order_print(node->right);
-    printf("%d\n", (int)node->content);
+    printf("%d |", (int)node->content);
 }
 
+// inorder traversal:
+// 1 - Traverse the left sub-tree
+// 2 - Traverse the root node
+// 3 - Traverse the right sub-tree
 void    inorder_print(t_node *node )
 {
     if (!node)
         return ;
     inorder_print(node->left);
-    printf("%d\n", (int)node->content);
+    printf("%d |", (int)node->content);
     inorder_print(node->right);
 }
 
@@ -93,3 +109,23 @@ t_node *reverse(t_node *node)
     reverse(node->right);
     return (node);
 }
+
+
+// int main ()
+// {
+//     t_node *root;
+//     root = create_node(0);
+
+//     int  i = 0;
+//     while(i < 20)
+//     {
+//         insert_node(root, rand()%500);
+//         i++;
+//     }
+
+//     pre_order_print(root);
+//     printf("\n\n");
+//     inorder_print(root);
+//     printf("\n\n");
+//     post_order_print(root);
+// }

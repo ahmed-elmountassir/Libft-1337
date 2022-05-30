@@ -66,6 +66,6 @@ Libft is my first school project, it's basically a C-library with highly useful 
 - |-void        preorder_print(t_node *node);
 - |-void        postorder_print(t_node *node);
 - |-t_node      *insert_node(t_node *root, int content);
-- |-void	    free_tree(t_node *node);
+- |-void	free_tree(t_node *node);
 - |-t_node      *reverse(t_node *node);
 - |-t_node      *find_node(t_node *node, int content);
